@@ -1,13 +1,11 @@
-// import logo from '/../assets/img/logo.png'; // Asegúrate de que la ruta a la imagen es correcta
 
 const Header = () => {
   return (
     <header id="header" className="fixed-top" >
     <div className="container d-flex align-items-center justify-content-between">
 
-      <h1 className="logo"><a href="index.html">DevFolio</a></h1>
+      <h1 className="logo"><a href="index.html"><img src="img/logo_final.png" alt="logo" /></a></h1>
 
-      {/* <a href="index.html" className="logo"><img src={logo} alt="" classNameName="img-fluid" /></a> */}
 
       <nav id="navbar" className="navbar">
         <ul>

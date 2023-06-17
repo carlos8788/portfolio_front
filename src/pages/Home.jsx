@@ -4,9 +4,10 @@ import Services from "../components/Services"
 import Formulario from "../components/Formulario"
 import Works from "../components/Works"
 import Typewriter from 'typewriter-effect';
+import Tecnologies from "../components/Tecnologies"
 
 export const Home = () => {
-  
+
   return (
     <div>
       <div id="hero" className="hero route bg-image" style={{ backgroundImage: `url(img/newHero.jpg)` }}>
@@ -20,7 +21,7 @@ export const Home = () => {
               <h3 className="m-2 text-white">
                 <Typewriter
                   options={{
-                    strings: ['Developer', 'Freelancer', 'Te'],
+                    strings: ['Developer', 'Freelancer'],
                     autoStart: true,
                     loop: true,
                   }}
@@ -34,7 +35,7 @@ export const Home = () => {
       <main id="main">
 
         <About />
-
+        <Tecnologies />
         <Services />
 
         <Works />
