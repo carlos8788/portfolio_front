@@ -6,7 +6,7 @@ const Portfolio = () => {
             id: 1,
             name: 'Clinic History app',
             description: 'App Python-SQL',
-            img: '/img/work-1.jpg',
+            img: 'img/work-1.jpg',
             date: '20/08/22',
             blog: '#',
             repo: 'https://github.com/carlos8788/entrega_final/tree/master'
@@ -15,7 +15,7 @@ const Portfolio = () => {
             id: 2,
             name: 'Consultorio online',
             description: 'Web App Django',
-            img: '/img/work-2.jpg',
+            img: 'img/work-2.jpg',
             date: '30/05/23',
             blog: '#',
             repo: 'https://github.com/carlos8788/django_consultorio'
@@ -24,7 +24,7 @@ const Portfolio = () => {
             id: 3,
             name: 'Database fake Airline',
             description: 'Database SQL ',
-            img: '/img/work-3.jpg',
+            img: 'img/work-3.jpg',
             date: '18/02/23',
             blog: '#',
             repo: 'https://github.com/carlos8788/script_sql'
@@ -33,7 +33,7 @@ const Portfolio = () => {
             id: 4,
             name: 'Mini Market',
             description: 'App Tkinter-SQLite',
-            img: '/img/work-4.jpg',
+            img: 'img/work-4.jpg',
             date: '17/12/22',
             blog: '#',
             repo: 'https://github.com/carlos8788/tpUnsaU-master'
@@ -42,7 +42,7 @@ const Portfolio = () => {
             id: 5,
             name: 'Turnos online',
             description: 'App web Vainilla JS',
-            img: '/img/work-5.jpg',
+            img: 'img/work-5.jpg',
             date: '12/10/22',
             blog: '#',
             repo: 'https://github.com/carlos8788/EntregaFinal'
@@ -51,7 +51,7 @@ const Portfolio = () => {
             id: 6,
             name: 'Portfolio',
             description: 'App web React Django',
-            img: '/img/work-6.jpg',
+            img: 'img/work-6.jpg',
             date: '16/06/23',
             blog: '#',
             repo: '#'

@@ -9,7 +9,7 @@ export const Home = () => {
   
   return (
     <div>
-      <div id="hero" className="hero route bg-image" style={{ backgroundImage: `url(/img/newHero.jpg)` }}>
+      <div id="hero" className="hero route bg-image" style={{ backgroundImage: `url(img/newHero.jpg)` }}>
 
         <div className="overlay-itro"></div>
         <div className="hero-content display-table">

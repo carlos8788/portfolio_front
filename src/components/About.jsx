@@ -28,7 +28,7 @@ const About = () => {
                                     <div className="row">
                                         <div className="col-sm-6 col-md-5">
                                             <div className="about-img">
-                                                <img src="/img/profile.jpg" className="img-fluid rounded b-shadow-a" alt="profile" />
+                                                <img src="img/profile.jpg" className="img-fluid rounded b-shadow-a" alt="profile" />
                                             </div>
                                         </div>
                                         <div className="col-sm-6 col-md-7">
