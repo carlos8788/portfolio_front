@@ -64,17 +64,17 @@ const Formulario = () => {
                       To ask about my services or job offers, you can contact me by email, cell phone or leave me a message that will be answered shortly.
                       </p>
                       <ul className="list-ico">
-                        <li><span className="bi bi-geo-alt"></span> Salta, Argentina</li>
+                        <li><span className="bi bi-geo-alt"></span> Salta Capital, Salta, Argentina</li>
                         <li><span className="bi bi-phone"></span> +5493876294668</li>
                         <li><span className="bi bi-envelope"></span> carlos8788@gmail.com</li>
                       </ul>
                     </div>
                     <div className="socials">
                       <ul className='d-flex justify-content-center gap-5'>
-                        <li><a href=""><i className="bi bi-facebook h2"></i></a></li>
-                        <li><a href=""><i className="bi bi-instagram h2"></i></a></li>
-                        <li><a href=""><i className="bi bi-linkedin h2"></i></a></li>
-                        <li><a href=""><i className="bi bi-github h2"></i></a></li>
+                        <li><a href="https://www.facebook.com/luiscarlos.perez.88/"><i className="bi bi-facebook h2"></i></a></li>
+                        <li><a href="https://www.instagram.com/luis_carlos8788/"><i className="bi bi-instagram h2"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/carlos8788/"><i className="bi bi-linkedin h2"></i></a></li>
+                        <li><a href="https://github.com/carlos8788"><i className="bi bi-github h2"></i></a></li>
                       </ul>
                     </div>
                   </div>
