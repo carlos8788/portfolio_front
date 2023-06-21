@@ -11,7 +11,7 @@ const Services = () => {
                                 Services
                             </h3>
                             <p className="subtitle-a">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            My services as a developer
                             </p>
                             <div className="line-mf"></div>
                         </div>
@@ -65,8 +65,8 @@ const Services = () => {
                             <div className="service-content">
                                 <h2 className="s-title">Responsive Design</h2>
                                 <p className="s-description text-center">
-                                    Make responsive design using CSS3, or one of its frameworks like Tailwind CSS or Bootstrap 5.
-                                    The good thing is that you can combine pure CSS with any framework
+                                Responsive designs using CSS3, as well as frameworks like Tailwind CSS or Bootstrap 5. 
+                                The good thing is that you can combine pure CSS with any framework. It is very useful
                                 </p>
                             </div>
                         </div>

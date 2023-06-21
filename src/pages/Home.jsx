@@ -4,6 +4,7 @@ import Services from "../components/Services"
 import Formulario from "../components/Formulario"
 import Works from "../components/Works"
 import Typewriter from 'typewriter-effect';
+import Tecnologies from "../components/Tecnologies"
 
 
 export const Home = () => {
@@ -36,11 +37,11 @@ export const Home = () => {
 
         <About />
         
+        <Tecnologies/>
         <Services />
-
-        <Works />
         <Portfolio />
-
+        <Works />
+        
         <Formulario />
       </main>
     </div>
