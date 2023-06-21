@@ -92,7 +92,7 @@ const images = [
 export default () => {
     return (
         <>
-            <div className="container my-5">
+            <div className="container my-5 pb-5">
                 <div className="col-sm-12">
                     <div className="title-box text-center">
                         <h3 className="title-a">

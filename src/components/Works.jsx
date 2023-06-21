@@ -2,7 +2,7 @@ import React from 'react'
 
 const Works = () => {
   return (
-    <div className="section-counter paralax-mf bg-image" style={{ backgroundImage: 'url(img/newHero.jpg)' }}>
+    <div className="section-counter paralax-mf bg-image mt-5" style={{ backgroundImage: 'url(img/newHero.jpg)' }}>
 
           <div className="overlay-mf"></div>
           <div className="container position-relative">

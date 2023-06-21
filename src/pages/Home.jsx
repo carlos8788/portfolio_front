@@ -37,10 +37,10 @@ export const Home = () => {
 
         <About />
         
-        <Tecnologies/>
         <Services />
-        <Portfolio />
+        <Tecnologies/>
         <Works />
+        <Portfolio />
         
         <Formulario />
       </main>
