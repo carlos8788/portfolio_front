@@ -1458,8 +1458,18 @@ footer .credits a {
 # Resume
 --------------------------------------------------------------*/
 
+.aside{
+  background: #0062d3;
+}
+
 .aside__underline {
   border-bottom: 2px solid white;
   width: 100%;
   display: inline-block;
+}
+
+.aside__a:hover{
+  transform: translateX(10px);
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
 }
