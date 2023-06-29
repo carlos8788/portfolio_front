@@ -106,9 +106,17 @@ export default () => {
                 </div>
                 <Swiper
                     spaceBetween={20}
-                    slidesPerView={5}
+                    slidesPerView={2}
                     autoplay={{ delay: 3000, disableOnInteraction: false }}
                     loop={true}
+                    breakpoints={{
+                        576: {
+                          slidesPerView: 3,
+                        },
+                        640:{
+                            slidesPerView: 5
+                        }
+                      }}
                 >
                     {images.map((image, index) => {
 
@@ -117,9 +125,9 @@ export default () => {
                                 <img src={image.img} alt={image.alt} className="img-fluid" style={{ height: '5rem' }} />
 
                             </div>
-                            </SwiperSlide>
+                        </SwiperSlide>
                     })}
-        </Swiper >
+                </Swiper >
             </div >
 
         </>

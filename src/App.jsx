@@ -1,24 +1,25 @@
-import { useState } from 'react'
-import Header from './components/Header'
 import '/public/vendor/bootstrap/css/bootstrap.min.css'
 import '/public/vendor/bootstrap-icons/bootstrap-icons.css'
 import '/public/vendor/glightbox/css/glightbox.min.css'
 import '/public/vendor/swiper/swiper-bundle.min.css'
-
 import '/public/css/style.css'
 import { Home } from './pages/Home'
-import Footer from './components/Footer'
-function App() {
-  
 
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
+
+import Resume from './pages/Resume';
+
+const App = () => {
   return (
-    <>
-    <Header/>
-    <Home/>
-    <Footer/>
-    </>
-      
-  )
+    <Router basename="/portfolio_front">
+      <Routes>
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
+
