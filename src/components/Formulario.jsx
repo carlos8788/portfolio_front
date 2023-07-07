@@ -1,10 +1,55 @@
+import React, { useState } from 'react';
+import Swal from 'sweetalert2'
 
 
 const Formulario = () => {
+  const [formData, setFormData] = useState({
+    nombre: '',
+    email: '',
+    asunto: '',
+    mensaje: '',
+  });
 
-    return (
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-      <section id="contact" className="paralax-mf footer-paralax bg-image sect-mt4 route" style={{ backgroundImage: 'url(img/newHero.jpg)' }}>
+    // Realizar la solicitud POST a la API de Django
+    fetch('https://backend-portfolio-kld8.onrender.com/api/contactos/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        if (response.ok) {
+          Swal.fire(
+            'Message sent!',
+            'Thanks!',
+            'success'
+          )
+          setFormData({
+            nombre: '',
+            email: '',
+            asunto: '',
+            mensaje: '',
+          })
+        } else {
+          // La solicitud falló
+          // Mostrar un mensaje de error o manejar el error según tus necesidades
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  return (
+
+    <section id="contact" className="paralax-mf footer-paralax bg-image sect-mt4 route" style={{ backgroundImage: 'url(img/newHero.jpg)' }}>
       <div className="overlay-mf"></div>
       <div className="container">
         <div className="row">
@@ -19,26 +64,62 @@ const Formulario = () => {
                       </h5>
                     </div>
                     <div>
-                      <form action="" method="post" role="form" className="php-email-form">
+
+                      <form onSubmit={handleSubmit} className="php-email-form">
                         <div className="row">
                           <div className="col-md-12 mb-3">
                             <div className="form-group">
-                              <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
+                              <input
+                                type="text"
+                                name="nombre"
+                                className="form-control"
+                                id="name"
+                                placeholder="Your Name"
+                                value={formData.nombre}
+                                onChange={handleChange}
+                                required
+                              />
                             </div>
                           </div>
                           <div className="col-md-12 mb-3">
                             <div className="form-group">
-                              <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" required />
+                              <input
+                                type="email"
+                                className="form-control"
+                                name="email"
+                                id="email"
+                                placeholder="Your Email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                required
+                              />
                             </div>
                           </div>
                           <div className="col-md-12 mb-3">
                             <div className="form-group">
-                              <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" required />
+                              <input
+                                type="text"
+                                className="form-control"
+                                name="asunto"
+                                id="subject"
+                                placeholder="Subject"
+                                value={formData.asunto}
+                                onChange={handleChange}
+                                required
+                              />
                             </div>
                           </div>
                           <div className="col-md-12">
                             <div className="form-group">
-                              <textarea className="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                              <textarea
+                                className="form-control"
+                                name="mensaje"
+                                rows="5"
+                                placeholder="Message"
+                                value={formData.mensaje}
+                                onChange={handleChange}
+                                required
+                              ></textarea>
                             </div>
                           </div>
                           <div className="col-md-12 text-center my-3">
@@ -47,7 +128,9 @@ const Formulario = () => {
                             <div className="sent-message">Your message has been sent. Thank you!</div>
                           </div>
                           <div className="col-md-12 text-center">
-                            <button type="submit" className="button button-a button-big button-rouded">Send Message</button>
+                            <button type="submit" className="button button-a button-big button-rouded">
+                              Send Message
+                            </button>
                           </div>
                         </div>
                       </form>
@@ -61,7 +144,7 @@ const Formulario = () => {
                     </div>
                     <div className="more-info">
                       <p className="lead">
-                      To ask about my services or job offers, you can contact me by email, cell phone or leave me a message that will be answered shortly.
+                        To ask about my services or job offers, you can contact me by email, cell phone or leave me a message that will be answered shortly.
                       </p>
                       <ul className="list-ico">
                         <li><span className="bi bi-geo-alt"></span> Salta Capital, Salta, Argentina</li>
@@ -85,9 +168,9 @@ const Formulario = () => {
         </div>
       </div>
     </section>
-    )
-  }
+  )
+}
 
-  export default Formulario
+export default Formulario
 
 
