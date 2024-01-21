@@ -9,7 +9,7 @@ const Portfolio = () => {
             img: 'img/work-1.jpg',
             date: '20/08/22',
             blog: '#',
-            repo: 'https://github.com/carlos8788/entrega_final/tree/master'
+            repo: 'https://github.com/carlos8788/electron-reactVite-mongo'
         },
         {
             id: 2,
@@ -45,7 +45,7 @@ const Portfolio = () => {
             img: 'img/work-5.jpg',
             date: '12/10/22',
             blog: '#',
-            repo: 'https://github.com/carlos8788/EntregaFinal'
+            repo: 'https://github.com/carlos8788/TPFinalBackEndCoderHouse'
         },
         {
             id: 6,
