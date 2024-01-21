@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import Swal from 'sweetalert2'
 
 
@@ -13,8 +13,8 @@ const Formulario = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Realizar la solicitud POST a la API de Django
-    fetch('https://backend-portfolio-kld8.onrender.com/api/contactos/', {
+
+    fetch('http://localhost:8000/api/contactos/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -35,8 +35,11 @@ const Formulario = () => {
             mensaje: '',
           })
         } else {
-          // La solicitud falló
-          // Mostrar un mensaje de error o manejar el error según tus necesidades
+          Swal.fire(
+            'Message not sent!',
+            'Error!',
+            'error'
+          )
         }
       })
       .catch((error) => {
@@ -148,8 +151,6 @@ const Formulario = () => {
                       </p>
                       <ul className="list-ico">
                         <li><span className="bi bi-geo-alt"></span> Salta Capital, Salta, Argentina</li>
-                        <li><span className="bi bi-phone"></span> +5493876294668</li>
-                        <li><span className="bi bi-envelope"></span> carlos8788@gmail.com</li>
                       </ul>
                     </div>
                     <div className="socials">

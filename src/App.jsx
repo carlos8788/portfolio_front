@@ -4,8 +4,6 @@ import '/public/vendor/glightbox/css/glightbox.min.css'
 import '/public/vendor/swiper/swiper-bundle.min.css'
 import '/public/css/style.css'
 import { Home } from './pages/Home'
-
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 
 import Resume from './pages/Resume';

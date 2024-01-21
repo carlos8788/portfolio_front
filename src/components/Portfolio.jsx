@@ -5,7 +5,7 @@ const Portfolio = () => {
         {
             id: 1,
             name: 'Clinic History app',
-            description: 'App Python-SQL',
+            description: 'App Electron React Mongo',
             img: 'img/work-1.jpg',
             date: '20/08/22',
             blog: '#',
@@ -40,8 +40,8 @@ const Portfolio = () => {
         },
         {
             id: 5,
-            name: 'Turnos online',
-            description: 'App web Vainilla JS',
+            name: 'E-commerce express',
+            description: 'App web Express/Bootstrap',
             img: 'img/work-5.jpg',
             date: '12/10/22',
             blog: '#',
