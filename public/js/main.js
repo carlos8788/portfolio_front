@@ -221,7 +221,6 @@
       preloader.remove()
     });
   }
-  console.log('preload');
   /**
    * Initiate Pure Counter 
    */

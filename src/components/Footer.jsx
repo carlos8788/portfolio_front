@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Footer = () => {
     return (
         <footer>
@@ -8,7 +6,7 @@ const Footer = () => {
                     <div className="col-sm-12">
                         <div className="copyright-box">
                             <div className="credits">
-                                <a href="https://github.com/carlos8788" className='h5' target='_blank'>carlos8788 <i className="bi bi-github h5"></i></a>
+                                <a href="https://github.com/carlos8788" className='h5' target='_blank' rel="noopener noreferrer">carlos8788 <i className="bi bi-github h5"></i></a>
                             </div>
                         </div>
                     </div>

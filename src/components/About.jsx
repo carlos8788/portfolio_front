@@ -68,6 +68,23 @@ const About = () => {
                                         <p className="lead">
                                             I like the development of web applications, especially doing the backend part, creating api's with Django or Express.
                                         </p>
+                                        <div className="">
+                                            <p className="lead">
+                                                I also run my own YouTube channel, where I share the knowledge I've gained. I've always believed that the best way to learn is by teaching others what you have learned yourself.
+                                            </p>
+                                            <p className="mt-4 d-flex align-items-center reset-style-link">
+                                                <span className="">My channel is:</span>
+                                                <a
+                                                    href="https://www.youtube.com/@luisdev8788" 
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer" 
+                                                    className="d-flex ms-2 align-items-center"
+                                                    >
+                                                    <span className="fw-bolder link-custom fs-4">@luisdev8788</span>
+                                                    <i className="bi bi-youtube fs-2 ms-2 "></i>
+                                                </a>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
