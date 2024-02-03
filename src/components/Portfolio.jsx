@@ -54,7 +54,7 @@ const Portfolio = () => {
             img: 'img/work-6.jpg',
             date: '16/06/23',
             blog: '#',
-            repo: '#'
+            repo: 'https://github.com/carlos8788?tab=repositories&q=portfolio&type=&language=&sort='
         }
 
     ]
@@ -99,7 +99,7 @@ const Portfolio = () => {
                                                         placement="bottom"
                                                         overlay={
                                                             <Popover id="github-popover">
-                                                                <Popover.Body>Blog</Popover.Body>
+                                                                <Popover.Body>Description</Popover.Body>
                                                             </Popover>
                                                         }
                                                     >
@@ -115,7 +115,7 @@ const Portfolio = () => {
                                                             </Popover>
                                                         }
                                                     >
-                                                        <a href={project.repo}>
+                                                        <a href={project.repo} target='_blank'>
                                                             <span className="bi bi-github"></span>
                                                         </a>
                                                     </OverlayTrigger>

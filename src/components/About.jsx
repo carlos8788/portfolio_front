@@ -14,8 +14,6 @@ const About = () => {
     const myData = {
         name: 'Luis Pérez',
         profile: 'Full stack developer',
-        email: 'carlos8788@gmail.com',
-        phone: '+5493876294668'
     }
     return (
         <section id="about" className="about-mf sect-pt4 route">
@@ -61,8 +59,8 @@ const About = () => {
                                             </h5>
                                         </div>
                                         <p className="lead">
-                                            I am a software and web application developer. I currently work with Python and Javascript.
-                                            Using frameworks like Django, Vite, React, Next, Django-Rest-Framework, Express.
+                                            I am a software and web application developer. I currently work with Python, Javascript, PHP and TypeScript.
+                                            Using frameworks like Django, Vite, React, ElectronJS, Django-Rest-Framework, Express, Laravel and NestJS.
                                         </p>
                                         <p className="lead">
                                             I make CRUD apps with SQL or NO-SQL. MySQL, PostgreSQL, SQL Server, MongoDB.

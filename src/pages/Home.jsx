@@ -5,13 +5,12 @@ import Formulario from "../components/Formulario"
 import Works from "../components/Works"
 import Typewriter from 'typewriter-effect';
 import Tecnologies from "../components/Tecnologies"
-import Layout from "./Layout"
+
 
 
 export const Home = () => {
 
   return (
-    <Layout>
       <div>
         <div id="hero" className="hero route bg-image" style={{ backgroundImage: `url(img/newHero.jpg)` }}>
 
@@ -47,7 +46,6 @@ export const Home = () => {
           <Formulario />
         </section>
       </div>
-    </Layout>
 
   )
 }

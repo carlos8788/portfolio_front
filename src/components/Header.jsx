@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
 
@@ -30,7 +30,7 @@ const Header = () => {
             <li><a className="nav-link scrollto" href="#about" onClick={(e) => handleClick(e, '/portfolio_front/#about')}>About</a></li>
             <li><a className="nav-link scrollto" href="#services" onClick={(e) => handleClick(e, '/portfolio_front/#services')}>Services</a></li>
             <li><a className="nav-link scrollto" href="#work" onClick={(e) => handleClick(e, '/portfolio_front/#work')}>Work</a></li>
-            <li><a className="nav-link scrollto" href="#blog" onClick={(e) => handleClick(e, '/portfolio_front/#blog')}>Blog</a></li>
+            <li><Link className="nav-link scrollto" to={'/blog'}>Blog</Link></li>
             {/* <li><a className="nav-link scrollto" href="/portfolio_front/resume">Resume</a></li> */}
             <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
