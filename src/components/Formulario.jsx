@@ -156,9 +156,9 @@ const Formulario = () => {
                     <div className="socials">
                       <ul className='d-flex justify-content-center gap-5'>
                         {/* <li><a href="https://www.facebook.com/luiscarlos.perez.88/" target='_blank'><i className="bi bi-facebook h2"></i></a></li> */}
-                        <li><a href="https://www.instagram.com/luis_carlos8788/" target='_blank'><i className="bi bi-instagram h2"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/carlos8788/" target='_blank'><i className="bi bi-linkedin h2"></i></a></li>
-                        <li><a href="https://github.com/carlos8788" target='_blank'><i className="bi bi-github h2"></i></a></li>
+                        <li><a href="https://www.instagram.com/luis_carlos8788/" target='_blank' rel="noopener noreferrer"><i className="bi bi-instagram h2"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/carlos8788/" target='_blank' rel="noopener noreferrer"><i className="bi bi-linkedin h2"></i></a></li>
+                        <li><a href="https://github.com/carlos8788" target='_blank' rel="noopener noreferrer"><i className="bi bi-github h2"></i></a></li>
                       </ul>
                     </div>
                   </div>

@@ -11,6 +11,7 @@ import Layout from './pages/Layout'
 import Blog from './pages/Blog'
 
 const App = () => {
+
   return (
     <Router basename="/portfolio_front">
       <Layout>
