@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Resume from './pages/Resume';
 import Layout from './pages/Layout'
 import Blog from './pages/Blog'
+import Login from './pages/Login'
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/resume" element={<Resume />} />
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/admin" element={<Login/>} />
         </Routes>
       </Layout>
     </Router>

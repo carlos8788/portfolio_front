@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import { useCallback } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
@@ -30,9 +30,11 @@ const Header = () => {
             <li><a className="nav-link scrollto" href="#about" onClick={(e) => handleClick(e, '/portfolio_front/#about')}>About</a></li>
             <li><a className="nav-link scrollto" href="#services" onClick={(e) => handleClick(e, '/portfolio_front/#services')}>Services</a></li>
             <li><a className="nav-link scrollto" href="#work" onClick={(e) => handleClick(e, '/portfolio_front/#work')}>Work</a></li>
+            <li><a className="nav-link scrollto" href="#contact" onClick={(e) => handleClick(e, '/portfolio_front/#contact')}>Contact</a></li>
             <li><Link className="nav-link scrollto" to={'/blog'}>Blog</Link></li>
+            <li><Link className="nav-link scrollto" to={'/admin'}>Admin</Link></li>
+            {/* <li><a className="nav-link scrollto" href="https://bakend-portfolio-whl9.onrender.com/admin">Admin</a></li> */}
             {/* <li><a className="nav-link scrollto" href="/portfolio_front/resume">Resume</a></li> */}
-            <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
           <i className="bi bi-list mobile-nav-toggle"></i>
         </nav>

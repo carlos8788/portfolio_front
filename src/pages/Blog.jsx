@@ -26,31 +26,24 @@ const Blog = () => {
 
     <>
       <div className="bg-dark custom-padding-nav"></div>
-      <div className="section-counter paralax-mf bg-image viewport-custom" style={{ backgroundImage: 'url(img/newHero.jpg)' }}>
-        <div className="overlay-mf viewport-custom">
-        <section id="work" className="portfolio-mf sect-pt4 route">
-            <div className="container">
-                <div className="row">
-                    <div className="col-sm-12">
-                        <div className="title-box text-center">
-                            <h3 className="title-a">
-                                Portfolio
-                            </h3>
-                            <p className="subtitle-a">
-                                Some of my projects
-                            </p>
-                            <div className="line-mf"></div>
-                        </div>
+      <section  className="paralax-mf bg-image  route" style={{ backgroundImage: 'url(img/newHero.jpg)' }}>
+        <div className="overlay-mf"></div>
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="contact-mf">
+                <div  className="box-shadow-full">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <CardProjects projects={projects}/>
                     </div>
+                  </div>
                 </div>
-                <div className="row">
-                    <CardProjects projects={projects}/>
-                </div>
+              </div>
             </div>
-        </section>
-
+          </div>
         </div>
-      </div>
+      </section>
     </>
 
   )

@@ -7,7 +7,6 @@ import Typewriter from 'typewriter-effect';
 import Tecnologies from "../components/Tecnologies"
 
 
-
 export const Home = () => {
 
   return (
