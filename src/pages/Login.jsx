@@ -1,17 +1,27 @@
-import { login } from "../helpers/api";
-import { getToken } from "../helpers/getToken";
+import { useEffect, useState } from "react";
+import { login, tokenCsrf } from "../helpers/api";
+
 
 const Login = () => {
-    console.log(document.cookie)
-    const csrfToken = getToken()
-    console.log(csrfToken)
+    const [csrfToken, setCsrfToken] = useState('')
+    useEffect(() => { 
+        const getToken = async () => {
+            try {
+                console.log(document.cookie)
+                const data = await tokenCsrf();
+                setCsrfToken(data.csrfToken); 
+            } catch (error) {
+                console.error("Error al obtener el token CSRF:", error);
+            }
+        };
+        getToken();
+    }, []);
     const handleSubmit = (e) => {
         e.preventDefault();
         const data = Object.fromEntries(new FormData(e.target))
-        data.token = csrfToken
-        console.log(data)
+        console.log(csrfToken)
+        data.csrfToken = csrfToken
         login(data)
-
     }
 
     return (
@@ -28,6 +38,7 @@ const Login = () => {
                                             <div className="title-box-2">
                                                 <h5 className="title-left">
                                                     Send Message Us
+                                                    {csrfToken}
                                                 </h5>
                                             </div>
                                             <div>
