@@ -1458,7 +1458,7 @@ footer .credits a {
 # Resume
 --------------------------------------------------------------*/
 
-.aside{
+.aside {
   background: #0062d3;
 }
 
@@ -1468,8 +1468,37 @@ footer .credits a {
   display: inline-block;
 }
 
-.aside__a:hover{
+.aside__a:hover {
   transform: translateX(10px);
   color: rgb(255, 255, 255);
   transition: 0.3s;
+}
+
+/*--------------------------------------------------------------- 
+# Custom css
+ ---------------------------------------------------------------*/
+.reset-style-link a{
+  color: black;
+  padding: 0 6px; 
+  border-radius: 8px;
+}
+
+.reset-style-link i{
+  color: red;
+}
+
+.reset-style-link a:hover{
+  color: white;
+  background-color: #1B1B1B;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+
+}
+
+.viewport-custom{
+  height: 600px;
+}
+
+.custom-padding-nav{
+  height: 80px;
 }
