@@ -15,18 +15,15 @@ export const login = async (data) => {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-
-            'X-CSRFToken': data.csrfToken 
         },
         body: JSON.stringify({
             username: data.username,
             password: data.password
         }),
-        credentials: 'include'
     })
     let result = await response.json()
-
-    if (result.key) {
+    console.log(result)
+    if (result.token) {
         window.location.href = url_login;
     } else {
         console.log('error')

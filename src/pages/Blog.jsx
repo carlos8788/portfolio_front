@@ -8,7 +8,6 @@ const Blog = () => {
   async function fetchData() {
     try {
       const response = await dataApi();
-      console.log(response)
       setProjects(response);
     } catch (error) {
       console.error("Error fetching data: ", error);
@@ -32,9 +31,9 @@ const Blog = () => {
           <div className="row">
             <div className="col-sm-12">
               <div className="contact-mf">
-                <div  className="box-shadow-full">
+                <div  className="box-shadow-full bg-light">
                   <div className="row">
-                    <div className="col-md-12">
+                    <div className="col-md-12 ">
                       <CardProjects projects={projects}/>
                     </div>
                   </div>

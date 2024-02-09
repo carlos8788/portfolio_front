@@ -5,8 +5,8 @@ const CardProjects = ({ projects }) => {
         <>
             {projects.map(project => {
                 return (
-                    <div className="col-md-4" key={project.id}>
-                        <div className="work-box">
+                    <div className="col-md-4 " key={project.id}>
+                        <div className="work-box border border-primary">
                             <a href={project.url_capture} data-gallery="portfolioGallery" className="portfolio-lightbox">
                                 <div className="work-img">
                                     <img src={project.url_capture} alt={project.name} className="img-fluid" />
