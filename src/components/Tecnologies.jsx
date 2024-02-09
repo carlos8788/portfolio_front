@@ -85,6 +85,10 @@ const images = [
         img: 'img/tecnologies/docker.png',
         alt: 'docker'
     },
+    {
+        img: 'img/tecnologies/ts.svg',
+        alt: 'ts'
+    }
 
 
 ]
@@ -111,12 +115,12 @@ export default () => {
                     loop={true}
                     breakpoints={{
                         576: {
-                          slidesPerView: 3,
+                            slidesPerView: 3,
                         },
-                        640:{
+                        640: {
                             slidesPerView: 5
                         }
-                      }}
+                    }}
                 >
                     {images.map((image, index) => {
 

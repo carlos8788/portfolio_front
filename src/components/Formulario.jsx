@@ -115,13 +115,14 @@ const Formulario = () => {
                           <div className="col-md-12">
                             <div className="form-group">
                               <textarea
-                                className="form-control"
+                                className="form-control "
                                 name="mensaje"
-                                rows="5"
+                                rows="8"
                                 placeholder="Message"
                                 value={formData.mensaje}
                                 onChange={handleChange}
                                 required
+                                style={{resize: 'none'}}
                               ></textarea>
                             </div>
                           </div>
