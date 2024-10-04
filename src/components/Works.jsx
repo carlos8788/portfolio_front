@@ -12,7 +12,7 @@ const Works = () => {
                     <span className="ico-circle"><i className="bi bi-check"></i></span>
                   </div>
                   <div className="counter-num">
-                    <p data-purecounter-start="0" data-purecounter-end="16" data-purecounter-duration="1" className="counter purecounter"></p>
+                    <p data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1" className="counter purecounter"></p>
                     <span className="counter-text">WORKS COMPLETED</span>
                   </div>
                 </div>
@@ -23,7 +23,7 @@ const Works = () => {
                     <span className="ico-circle"><i className="bi bi-journal-richtext"></i></span>
                   </div>
                   <div className="counter-num">
-                    <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" className="counter purecounter"></p>
+                    <p data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" className="counter purecounter"></p>
                     <span className="counter-text">YEARS OF EXPERIENCE</span>
                   </div>
                 </div>
@@ -34,7 +34,7 @@ const Works = () => {
                     <span className="ico-circle"><i className="bi bi-people"></i></span>
                   </div>
                   <div className="counter-num">
-                    <p data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" className="counter purecounter"></p>
+                    <p data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="1" className="counter purecounter"></p>
                     <span className="counter-text">TOTAL CLIENTS</span>
                   </div>
                 </div>
