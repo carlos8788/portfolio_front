@@ -10,7 +10,6 @@ const Login = () => {
     }
 
     return (
-        <>
             <section id="contact" className="paralax-mf footer-paralax bg-image sect-mt4 route" style={{ backgroundImage: 'url(img/newHero.jpg)' }}>
                 <div className="overlay-mf"></div>
                 <div className="container">
@@ -94,7 +93,6 @@ const Login = () => {
                     </div>
                 </div>
             </section>
-        </>
     )
 }
 
